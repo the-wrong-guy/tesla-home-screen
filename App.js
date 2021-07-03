@@ -16,17 +16,16 @@ export default function App() {
     <SafeAreaView
       style={{
         flex: 1,
-        paddingTop: Platform.OS === "android" ? Constants.statusBarHeight : 0,
+        
       }}
     >
-      <StatusBar style={{ background: "green" }} />
+      {/* <StatusBar /> */}
       <View
         style={{
           flex: 1,
           backgroundColor: "#fff",
           alignItems: "center",
           justifyContent: "center",
-          height: Dimensions.get("window").height - Constants.statusBarHeight,
         }}
       >
         <Header />
@@ -39,3 +38,5 @@ export default function App() {
 const styles = StyleSheet.create({
   mainContainer: {},
 });
+
+// paddingTop: Platform.OS === "android" ? Constants.statusBarHeight : 0,

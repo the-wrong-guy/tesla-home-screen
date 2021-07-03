@@ -21,7 +21,7 @@ export default function CarList() {
         horizontal={false}
         decelerationRate='fast'
         snapToAlignment={"center"}
-        snapToInterval={Dimensions.get("screen").height}
+        snapToInterval={Dimensions.get("window").height}
       />
     </View>
   );
